@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.12591268731649508.WebWorker.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "../../../../../private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.9118325687572235.WebWorker.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../../../private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.12591268731649508.WebWorker.js":
-/*!*************************************************************************************************!*\
-  !*** /private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.12591268731649508.WebWorker.js ***!
-  \*************************************************************************************************/
+/***/ "../../../../../private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.9118325687572235.WebWorker.js":
+/*!************************************************************************************************!*\
+  !*** /private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.9118325687572235.WebWorker.js ***!
+  \************************************************************************************************/
 /*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Users_victor_Documents_Dev_den_node_modules_metaverse_rpc_lib_common_transports_WebWorker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/metaverse-rpc/lib/common/transports/WebWorker */ \"./node_modules/metaverse-rpc/lib/common/transports/WebWorker.js\");\n\n\nconst imported = __webpack_require__(/*! ./scene.tsx */ \"./scene.tsx\")\n\nif (imported && imported.__esModule && imported['default']) {\n  new imported['default'](Object(_Users_victor_Documents_Dev_den_node_modules_metaverse_rpc_lib_common_transports_WebWorker__WEBPACK_IMPORTED_MODULE_0__[\"WebWorkerTransport\"])(self))\n}\n\n\n//# sourceURL=webpack:////private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.12591268731649508.WebWorker.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Users_victor_Documents_Dev_den_node_modules_metaverse_rpc_lib_common_transports_WebWorker__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/metaverse-rpc/lib/common/transports/WebWorker */ \"./node_modules/metaverse-rpc/lib/common/transports/WebWorker.js\");\n\n\nconst imported = __webpack_require__(/*! ./scene.tsx */ \"./scene.tsx\")\n\nif (imported && imported.__esModule && imported['default']) {\n  new imported['default'](Object(_Users_victor_Documents_Dev_den_node_modules_metaverse_rpc_lib_common_transports_WebWorker__WEBPACK_IMPORTED_MODULE_0__[\"WebWorkerTransport\"])(self))\n}\n\n\n//# sourceURL=webpack:////private/var/folders/rk/h23x5jcx2mq42cb3nyvj499c0000gn/T/0.9118325687572235.WebWorker.js?");
 
 /***/ }),
 
@@ -697,7 +697,7 @@ eval("var g;\n\n// This works in non-strict mode\ng = (function() {\n\treturn th
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return HouseScene; });\n/* harmony import */ var metaverse_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! metaverse-api */ \"./node_modules/metaverse-api/lib/index.js\");\n/* harmony import */ var metaverse_api__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(metaverse_api__WEBPACK_IMPORTED_MODULE_0__);\n\nclass HouseScene extends metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"ScriptableScene\"] {\n    constructor() {\n        super(...arguments);\n        this.state = {\n            isDoorClosed: false\n        };\n    }\n    sceneDidMount() {\n        this.eventSubscriber.on('door_click', () => {\n            this.setState({ isDoorClosed: !this.state.isDoorClosed });\n        });\n    }\n    async render() {\n        const doorRotation = {\n            x: 0,\n            y: this.state.isDoorClosed ? 0 : 90,\n            z: 0\n        };\n        return (metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"scene\", { position: { x: 5, y: 0, z: 5 } },\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"entity\", { rotation: doorRotation, transition: { rotation: { duration: 1000, timing: 'ease-in' } } },\n                metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"box\", { id: \"door\", scale: { x: 1, y: 2, z: 0.05 }, position: { x: 0.5, y: 1, z: 0 }, color: \"#00FF00\" })),\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"box\", { position: { x: 2, y: 1, z: 0 }, scale: { x: 2, y: 2, z: 0.05 }, color: \"#0000FF\" }),\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"box\", { position: { x: -1, y: 1, z: 0 }, scale: { x: 2, y: 2, z: 0.05 }, color: \"#0000FF\" })));\n    }\n}\n\n\n//# sourceURL=webpack:///./scene.tsx?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return HouseScene; });\n/* harmony import */ var metaverse_api__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! metaverse-api */ \"./node_modules/metaverse-api/lib/index.js\");\n/* harmony import */ var metaverse_api__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(metaverse_api__WEBPACK_IMPORTED_MODULE_0__);\n\nclass HouseScene extends metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"ScriptableScene\"] {\n    constructor() {\n        super(...arguments);\n        this.state = {\n            isDoorClosed: false\n        };\n    }\n    async sceneDidMount() {\n        this.eventSubscriber.on('door_click', () => {\n            this.setState({ isDoorClosed: !this.state.isDoorClosed });\n        });\n    }\n    async render() {\n        const doorRotation = {\n            x: 0,\n            y: this.state.isDoorClosed ? 0 : 90,\n            z: 0\n        };\n        return (metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"scene\", { position: { x: 5, y: 0, z: 5 } },\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"entity\", { rotation: doorRotation, transition: { rotation: { duration: 1000, timing: 'ease-in' } } },\n                metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"box\", { id: \"door\", scale: { x: 1, y: 2, z: 0.05 }, position: { x: 0.5, y: 1, z: 0 }, color: \"#00FF00\" })),\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"gltf-model\", { position: { x: 0, y: -7, z: 0 }, scale: { x: 5, y: 5, z: 5 }, src: \"models/model.gltf\" }),\n            metaverse_api__WEBPACK_IMPORTED_MODULE_0__[\"createElement\"](\"gltf-model\", { src: \"models/cow.gltf\" })));\n    }\n}\n\n\n//# sourceURL=webpack:///./scene.tsx?");
 
 /***/ })
 
