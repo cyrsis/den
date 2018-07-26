@@ -34,4 +34,13 @@ July 25, 2018 11:11 am
  - Would focus on the Front end for now
  
   
+July 26, 2018 8:21 
+##Check Inventory
+-----------------------
+- Font end with Dencentraland
+- Tree animal and a gym,
+- A gym
+- Dont have seattle tv, but have seattle
+- A beautiful rainbow that doesnt lose it color
+- Rent me out for a night for hang out
 
