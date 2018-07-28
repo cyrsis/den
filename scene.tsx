@@ -7,8 +7,10 @@ const jsonInterface = require('./abi.json')
 
 // This is an interface, you can use it to enforce the types of your state
 export interface IState {
-    isDoorClosed: boolean
+    isDoorClosed: boolean;
+    rentMeText: string;
 }
+
 
 const Tile = (props: { position: Vector3Component }) => {
     // const colores = ["#1dccc7", "#ffce00", "#9076ff", "#fe3e3e", "#3efe94", "#3d30ec", "#6699cc"];
@@ -26,7 +28,9 @@ const Tile = (props: { position: Vector3Component }) => {
 export default class HouseScene extends DCL.ScriptableScene<any, IState> {
     // This is your initial state and it respects the given IState interface
     state = {
-        isDoorClosed: false
+        isDoorClosed: false,
+        rentMeText: "Rent me!"
+
     }
 
 
@@ -47,12 +51,16 @@ export default class HouseScene extends DCL.ScriptableScene<any, IState> {
 
         this.subscribeTo('click', async () => {
             // setState() will update the state and trigger an update, causing the scene to rerender
-           try {
-               const address = '0xaF6F0317B2B7d4eb4D1A94403c94Bf4F091645A1'
-               const e: any = await instance.payRent({from: address, value: 20})
-               console.log(e)
-            } catch(e) { console.log(e) }
+            try {
+                const address = '0xaF6F0317B2B7d4eb4D1A94403c94Bf4F091645A1'
+                const e: any = await instance.payRent({from: address, value: 20})
+                console.log(e)
+            } catch (e) {
+                console.log(e)
+            }
             console.log("rent Click")
+
+            this.setState({rentMeText: "Gone"})
         })
     }
 
@@ -150,7 +158,7 @@ export default class HouseScene extends DCL.ScriptableScene<any, IState> {
                     opacity={1}
                     position={{x: -2, y: 3.8, z: 1}}
                     scale={{x: 5, y: 5, z: 5}}
-                    value="Rent Me!" fontSize={90} color="white"></text>
+                    value={this.state.rentMeText} fontSize={90} color="white"></text>
                 <box id="rent" material="#transparent" scale={{x: 4, y: 1, z: 1}}
                      position={{x: -2, y: 4, z: 1.5}}/>
 

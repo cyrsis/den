@@ -1,4 +1,5 @@
-# den
+# Den
+
 
 #Events
 CONFERENCE + HACKATHON
@@ -22,7 +23,7 @@ Hong Kong
   
   
 
-#Logs
+ Logs
 ==============================================
 
 July 25, 2018 11:09 am (Analysis situation)
@@ -33,14 +34,34 @@ July 25, 2018 11:11 am
  - Got a idea for rending the place,
  - Would focus on the Front end for now
  
+July 28, 2018 6:50 pm
+Update the docs for this project 
   
 July 26, 2018 8:21 
-##Check Inventory
+
+Check Inventory
 -----------------------
 - Font end with Dencentraland
 - Tree animal and a gym,
 - A gym
 - Dont have seattle tv, but have seattle
-- A beautiful rainbow that doesnt lose it color
-- Rent me out for a night for hang out
+- A beautiful rainbow that doesnt wash a aways
+- Rent me out Function for a night for hang out
 
+
+Setup
+------------------------
+ `npm install -g decentraland` 
+ 
+New Project
+------------------------
+`dcl init`
+ 
+
+Run the Project
+----------------------
+`dcl preview`
+
+Deploy
+---------------------
+`dcl deploy`
