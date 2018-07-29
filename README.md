@@ -41,10 +41,10 @@ July 26, 2018 8:21
 
 Check Inventory
 -----------------------
-- Font end with Dencentraland
+- Front end with Dencentraland
 - Tree animal and a gym,
 - A gym
-- Dont have seattle tv, but have seattle
+- Don't have seattle tv, but have seattle
 - A beautiful rainbow that doesnt wash a aways
 - Rent me out Function for a night for hang out
 
